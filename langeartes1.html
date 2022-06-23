@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lange Artes e Festas</title>
+    <style>
+         div#area {
+            font: normal 50pt Brush Script MT;
+            background: rgb(153, 104, 120);
+            color: white;
+            width: 1500px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Lange Artes e Festas
+    </div>
+    <script>
+        var a = window.document.getElementById ("area") 
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function entrar() {
+            a.innerText = 'Lange Artes e Festas - Fazemos seu artesanato em!'
+            a.style.background = 'rgb(153, 104, 120)'
+        }
+       function clicar() {
+            a.innerText = 'Feltro, EVA, MDF e Tecidos!'
+            a.style.background = 'rgb(153, 104, 120)'
+        }
+       function sair() {
+            a.innerText = 'Solange Tortato - Contato (49) 98851-2660 - Lange Artes'
+            a.style.background = 'rgb(153, 104, 120)'
+        } 
+                
+    </script>
+</body>
+</html>
